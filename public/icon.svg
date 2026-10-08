@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .background { fill: #171717; }
+    .foreground { fill: #fff; }
+    @media (prefers-color-scheme: light) {
+      .background { fill: #fff; }
+      .foreground { fill: #171717; }
+    }
+  </style>
+  <rect class="background" width="64" height="64" rx="18"/>
+  <path class="foreground" d="M25.2 20.5 13.7 32l11.5 11.5-4.6 4.6L4.5 32l16.1-16.1 4.6 4.6Zm13.6 0 4.6-4.6L59.5 32 43.4 48.1l-4.6-4.6L50.3 32 38.8 20.5ZM36 11l5.9 1.1-13.9 41.9-5.9-1.1L36 11Z"/>
+</svg>
