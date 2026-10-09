@@ -31,7 +31,7 @@ export function HeroSection() {
               animate={prefersReducedMotion ? undefined : { opacity: [1, 0.94, 1] }}
               transition={prefersReducedMotion ? undefined : { duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
             >
-              Available for new opportunities
+              Available for Hire • Karachi, Pakistan &amp; Remote Worldwide
             </motion.span>
           </motion.div>
 
@@ -51,7 +51,7 @@ export function HeroSection() {
             transition={{ delay: 0.2 }}
             className="mt-7 max-w-lg text-base leading-7 text-muted-foreground sm:text-lg"
           >
-            I build modern, responsive, and high-performance mobile and web applications using React Native, React.js, Next.js, and modern frontend technologies.
+            I build modern, responsive, and high-performance mobile (iOS &amp; Android) and web applications using React Native, React.js, Next.js, and TypeScript.
           </motion.p>
 
           <div className="mt-9 flex flex-wrap gap-3">
