@@ -8,26 +8,28 @@ const baseUrl = 'https://syedmuhemin.dev'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Syed Muhemin Ali | React Native & React.js Developer | Pakistan',
+    default: 'Syed Muhemin Ali | MERN Stack & React Native Developer | Pakistan',
     template: '%s | Syed Muhemin Ali',
   },
   description:
-    'Syed Muhemin Ali is an experienced React Native & React.js Developer based in Karachi, Pakistan. Specialized in high-performance iOS & Android mobile apps, Next.js web apps, and modern frontend architecture. Available for hire and remote roles worldwide.',
+    'Syed Muhemin Ali is an experienced MERN Stack & React Native Developer based in Karachi, Pakistan. Specialized in scalable full-stack web applications (MongoDB, Express.js, React.js, Node.js), Next.js, and high-performance iOS & Android mobile apps. Available for hire and remote roles worldwide.',
   applicationName: 'Syed Muhemin Ali Portfolio',
   authors: [{ name: 'Syed Muhemin Ali', url: baseUrl }],
   generator: 'Next.js',
   keywords: [
     // Core Roles
+    'MERN Stack Developer',
+    'Full Stack Developer',
     'React Native Developer',
+    'Node.js Developer',
     'React Developer',
     'React.js Developer',
     'Frontend Developer',
     'Next.js Developer',
-    'Full Stack Developer',
-    'MERN Stack Developer',
     'Mobile App Developer',
     'Software Engineer',
     // Pakistan & Regional SEO
+    'MERN Stack Developer Pakistan',
     'React Native Developer Pakistan',
     'React Developer Pakistan',
     'React.js Developer Pakistan',
@@ -38,6 +40,7 @@ export const metadata: Metadata = {
     'Mobile App Developer Pakistan',
     'Software Engineer Pakistan',
     // Hiring Intent
+    'Hire MERN Stack Developer',
     'Hire React Native Developer',
     'Hire React Developer',
     'Hire React Developer Pakistan',
@@ -49,6 +52,8 @@ export const metadata: Metadata = {
     // Tech Stack
     'TypeScript Developer',
     'JavaScript Developer',
+    'MongoDB Developer',
+    'Express.js Developer',
     'iOS App Development',
     'Android App Development',
     'Expo Developer',
@@ -85,16 +90,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: baseUrl,
-    title: 'Syed Muhemin Ali | React Native & React.js Developer | Pakistan',
+    title: 'Syed Muhemin Ali | MERN Stack & React Native Developer | Pakistan',
     description:
-      'Professional React Native & React.js Developer in Pakistan building high-performance mobile and web apps with Next.js & TypeScript. Open for hire and remote roles.',
+      'Professional MERN Stack & React Native Developer in Pakistan building high-performance full-stack web and mobile apps with Next.js, MongoDB, Node.js & TypeScript. Open for hire and remote roles.',
     siteName: 'Syed Muhemin Ali Portfolio',
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Syed Muhemin Ali - React Native & Frontend Developer Pakistan',
+        alt: 'Syed Muhemin Ali - MERN Stack & React Native Developer Pakistan',
       },
       {
         url: '/profile-photo.jpeg',
@@ -106,9 +111,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Syed Muhemin Ali | React Native & React.js Developer | Pakistan',
+    title: 'Syed Muhemin Ali | MERN Stack & React Native Developer | Pakistan',
     description:
-      'Professional React Native & React.js Developer based in Pakistan building scalable mobile apps and modern web platforms.',
+      'Professional MERN Stack & React Native Developer based in Pakistan building scalable web platforms and mobile apps.',
     images: ['/opengraph-image'],
     creator: '@syedmuheminali',
   },
@@ -123,6 +128,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   colorScheme: 'light dark',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
@@ -139,9 +146,9 @@ const jsonLd = {
       '@id': `${baseUrl}/#person`,
       name: 'Syed Muhemin Ali',
       alternateName: ['Syed Muhemin', 'Muhemin Ali'],
-      jobTitle: 'React Native & React.js Developer',
+      jobTitle: 'MERN Stack & React Native Developer',
       description:
-        'Professional React Native & React.js Developer based in Karachi, Pakistan, specializing in high-performance iOS and Android mobile apps, Next.js web applications, and full stack JavaScript/TypeScript systems.',
+        'Professional MERN Stack & React Native Developer based in Karachi, Pakistan, specializing in high-performance full-stack web apps, iOS and Android mobile apps, Next.js web applications, and full stack JavaScript/TypeScript systems.',
       url: baseUrl,
       image: `${baseUrl}/profile-photo.jpeg`,
       email: 'mailto:smuheminali@gmail.com',
@@ -160,6 +167,7 @@ const jsonLd = {
         'https://github.com/syedmuheminali',
       ],
       knowsAbout: [
+        'MERN Stack',
         'React Native',
         'React.js',
         'Next.js',
@@ -187,9 +195,9 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': `${baseUrl}/#website`,
       url: baseUrl,
-      name: 'Syed Muhemin Ali | React Native & Frontend Developer',
+      name: 'Syed Muhemin Ali | MERN Stack & React Native Developer',
       description:
-        'Portfolio and engineering projects of Syed Muhemin Ali, React Native & Frontend Developer based in Pakistan.',
+        'Portfolio and engineering projects of Syed Muhemin Ali, MERN Stack & React Native Developer based in Pakistan.',
       publisher: {
         '@id': `${baseUrl}/#person`,
       },

@@ -59,7 +59,7 @@ export function ProjectModal({
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
           onClick={onClose}
-          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/75 px-4 py-6 backdrop-blur-sm sm:px-8"
+          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/75 p-2 sm:p-6 backdrop-blur-sm"
         >
           <motion.div
             role="dialog"
@@ -70,15 +70,15 @@ export function ProjectModal({
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
             transition={{ duration: 0.2 }}
             onClick={event => event.stopPropagation()}
-            className="flex max-h-[92vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl border border-border bg-background shadow-2xl"
+            className="flex max-h-[94vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl sm:max-h-[92vh] sm:rounded-3xl"
           >
             {/* Modal Header */}
-            <div className="flex shrink-0 items-start justify-between gap-4 border-b border-border px-5 py-4 sm:px-7">
+            <div className="flex shrink-0 items-start justify-between gap-4 border-b border-border px-4 py-3.5 sm:px-7 sm:py-4">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[.16em] text-muted-foreground">
                   {project.type} • Project Details
                 </p>
-                <h2 id="project-modal-title" className="mt-1 text-lg font-semibold sm:text-xl">
+                <h2 id="project-modal-title" className="mt-1 text-base font-semibold sm:text-xl">
                   {project.title}
                 </h2>
               </div>
@@ -88,21 +88,21 @@ export function ProjectModal({
                 aria-label="Close project modal"
                 className="rounded-full p-2 text-muted-foreground transition hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
               >
-                <X />
+                <X className="size-5" />
               </button>
             </div>
 
             {/* Modal Body / Scrollable Area */}
             <div className="flex-1 overflow-y-auto">
               {/* Media / Screenshots Section */}
-              <div className="relative flex min-h-[220px] max-h-[60vh] items-center justify-center bg-black/5 p-3 sm:min-h-[320px] sm:p-6">
+              <div className="relative flex min-h-[180px] max-h-[50vh] items-center justify-center bg-black/5 p-2 sm:min-h-[300px] sm:max-h-[55vh] sm:p-6">
                 {hasImages && currentImage ? (
                   <>
                     <Image
                       src={currentImage}
                       alt={`${project.title} screenshot ${activeImage + 1}`}
                       priority={activeImage === 0}
-                      className="max-h-[55vh] w-full object-contain"
+                      className="max-h-[48vh] w-full object-contain sm:max-h-[52vh]"
                     />
                     {images.length > 1 && (
                       <>
@@ -112,9 +112,9 @@ export function ProjectModal({
                             setActiveImage(index => (index - 1 + images.length) % images.length)
                           }
                           aria-label="Show previous screenshot"
-                          className="absolute left-4 grid size-10 place-items-center rounded-full border border-border bg-background/90 shadow-md transition hover:bg-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                          className="absolute left-2 grid size-8 place-items-center rounded-full border border-border bg-background/90 shadow-md transition hover:bg-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:left-4 sm:size-10"
                         >
-                          <ArrowLeft />
+                          <ArrowLeft className="size-4 sm:size-5" />
                         </button>
                         <button
                           type="button"
@@ -122,9 +122,9 @@ export function ProjectModal({
                             setActiveImage(index => (index + 1) % images.length)
                           }
                           aria-label="Show next screenshot"
-                          className="absolute right-4 grid size-10 place-items-center rounded-full border border-border bg-background/90 shadow-md transition hover:bg-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                          className="absolute right-2 grid size-8 place-items-center rounded-full border border-border bg-background/90 shadow-md transition hover:bg-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:right-4 sm:size-10"
                         >
-                          <ArrowRight />
+                          <ArrowRight className="size-4 sm:size-5" />
                         </button>
                       </>
                     )}
@@ -179,7 +179,7 @@ export function ProjectModal({
             </div>
 
             {/* Modal Footer */}
-            <div className="flex shrink-0 flex-wrap items-center justify-between gap-4 border-t border-border px-5 py-4 sm:px-7">
+            <div className="flex shrink-0 flex-wrap items-center justify-between gap-3 border-t border-border px-4 py-3 sm:px-7 sm:py-4">
               <div className="flex items-center gap-3">
                 {hasImages && images.length > 1 && (
                   <div
@@ -209,7 +209,7 @@ export function ProjectModal({
                 )}
               </div>
 
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex w-full items-center justify-end gap-2.5 sm:w-auto">
                 {project.githubUrl && (
                   <a
                     href={project.githubUrl}
@@ -217,7 +217,7 @@ export function ProjectModal({
                     rel="noopener noreferrer"
                     aria-label={`Open ${project.title} GitHub repository`}
                     title="GitHub repository"
-                    className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-border px-3.5 py-1.5 text-xs font-medium transition hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:px-4 sm:py-2 sm:text-sm"
                   >
                     <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="size-4">
                       <path d="M12 .297a12 12 0 0 0-3.797 23.4c.6.11.82-.26.82-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.303-5.466-1.333-5.466-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.496 11.496 0 0 1 6.006 0c2.291-1.553 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.235 1.91 1.235 3.221 0 4.61-2.805 5.624-5.475 5.921.43.372.823 1.103.823 2.222v3.293c0 .32.216.694.825.576A12.004 12.004 0 0 0 24 12.297c0-6.627-5.373-12-12-12Z" />
@@ -233,7 +233,7 @@ export function ProjectModal({
                     rel="noopener noreferrer"
                     aria-label={`Open ${project.title} live preview`}
                     title="Live preview"
-                    className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-foreground px-3.5 py-1.5 text-xs font-medium text-background transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:px-4 sm:py-2 sm:text-sm"
                   >
                     <ExternalLink className="size-4" /> Live Demo
                   </a>

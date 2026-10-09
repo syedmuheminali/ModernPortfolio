@@ -31,7 +31,7 @@ export function Portfolio() {
   }
 
   return (
-    <div className="min-h-screen overflow-hidden bg-background text-foreground">
+    <div className="min-h-screen w-full overflow-x-clip bg-background text-foreground">
       <PageLoader />
       <ScrollProgress />
       <Header />
