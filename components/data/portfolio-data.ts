@@ -65,6 +65,8 @@ export const skills = {
     'Firebase',
     'State Management',
     'API Architecture',
+    'Better Auth',
+    'Clerk'
   ],
   'Tools & Ecosystem': [
     'Git',
