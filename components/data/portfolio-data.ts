@@ -55,6 +55,9 @@ export const skills = {
     'CSS3',
     'Tailwind CSS',
     'NativeWind',
+    "Formik",
+    "Yup",
+    'SASS'
   ],
   'Mobile & Backend APIs': [
     'React Native',
