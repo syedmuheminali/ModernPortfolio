@@ -7,11 +7,11 @@ export function TechStackSection() {
         <div className="mb-5 text-center text-xs font-medium uppercase tracking-[.14em] text-muted-foreground">
           Technologies I work with
         </div>
-        <div className="flex flex-nowrap justify-start gap-2.5 overflow-x-auto overscroll-x-contain pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:justify-center">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
           {stack.map(item => (
             <span
               key={item}
-              className="shrink-0 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-muted-foreground transition hover:-translate-y-0.5 hover:border-foreground hover:text-foreground"
+              className="rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-medium text-muted-foreground transition hover:-translate-y-0.5 hover:border-foreground hover:text-foreground sm:px-4 sm:py-2 sm:text-sm"
             >
               {item}
             </span>

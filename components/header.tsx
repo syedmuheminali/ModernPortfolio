@@ -31,22 +31,26 @@ export function Header() {
           ))}
         </div>
 
-        <ThemeToggle />
+        <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition hover:scale-[1.03]"
+          >
+            Let&apos;s talk <ArrowUpRight className="size-4" />
+          </a>
+        </div>
 
-        <a
-          href="#contact"
-          className="hidden items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition hover:scale-[1.03] md:flex"
-        >
-          Let&apos;s talk <ArrowUpRight data-icon="inline-end" />
-        </a>
-
-        <button
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="rounded-full p-2 md:hidden"
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="flex items-center gap-1.5 md:hidden">
+          <ThemeToggle />
+          <button
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="rounded-full p-2 text-foreground transition hover:bg-muted"
+          >
+            {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </nav>
 
       {menuOpen && (
@@ -55,16 +59,27 @@ export function Header() {
           animate={{ opacity: 1, y: 0 }}
           className="mx-auto mt-2 max-w-6xl rounded-3xl border border-border bg-card p-4 shadow-lg md:hidden"
         >
-          {navItems.map(item => (
+          <div className="grid gap-1">
+            {navItems.map(item => (
+              <a
+                onClick={() => setMenuOpen(false)}
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="block rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground transition hover:bg-muted hover:text-foreground"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+          <div className="mt-3 border-t border-border pt-3">
             <a
               onClick={() => setMenuOpen(false)}
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="block rounded-xl px-3 py-3 text-sm text-muted-foreground hover:bg-muted"
+              href="#contact"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-foreground px-4 py-2.5 text-sm font-medium text-background"
             >
-              {item}
+              Let&apos;s talk <ArrowUpRight className="size-4" />
             </a>
-          ))}
+          </div>
         </motion.div>
       )}
     </header>

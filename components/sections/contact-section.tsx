@@ -67,27 +67,27 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="mx-4 mb-8 overflow-hidden rounded-[2rem] bg-[#171717] text-white sm:mx-6 lg:mx-auto lg:max-w-6xl"
+      className="mx-3 mb-8 overflow-hidden rounded-[1.75rem] bg-[#171717] text-white sm:mx-6 sm:rounded-[2rem] lg:mx-auto lg:max-w-6xl"
     >
-      <div className="relative grid gap-12 px-6 py-20 sm:px-12 sm:py-24 lg:grid-cols-[.8fr_1.2fr]">
+      <div className="relative grid gap-10 px-5 py-14 sm:gap-12 sm:px-10 sm:py-20 lg:grid-cols-[.8fr_1.2fr] lg:p-14">
         <div className="absolute right-0 top-0 size-80 rounded-full bg-[radial-gradient(circle,rgba(125,148,207,.32),transparent_68%)] blur-2xl" />
         <Reveal>
           <div className="relative">
             <SectionLabel>07 / Contact</SectionLabel>
-            <h2 className="mt-5 max-w-lg text-4xl font-semibold tracking-[-.05em] sm:text-6xl">
+            <h2 className="mt-5 max-w-lg text-3xl font-semibold tracking-[-.04em] sm:text-5xl lg:text-6xl">
               Let&apos;s work together.
             </h2>
-            <p className="mt-5 max-w-md leading-7 text-white/55">
+            <p className="mt-5 max-w-md text-sm leading-7 text-white/55 sm:text-base">
               Looking for a developer who can turn ideas into production-ready products? Let&apos;s discuss your next opportunity.
             </p>
-            <div className="mt-9 grid gap-3 text-sm text-white/70">
+            <div className="mt-8 grid gap-3 text-sm text-white/70 sm:mt-9">
               <a
                 href="https://mail.google.com/mail/?view=cm&amp;to=smuheminali%40gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white"
               >
-                <Mail /> smuheminali@gmail.com
+                <Mail className="size-4 shrink-0" /> <span className="break-all sm:break-normal">smuheminali@gmail.com</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/syedmuheminali/?isSelfProfile=true"
@@ -95,7 +95,7 @@ export function ContactSection() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white"
               >
-                <ExternalLink /> LinkedIn profile
+                <ExternalLink className="size-4 shrink-0" /> LinkedIn profile
               </a>
               <a
                 href="https://github.com/syedmuheminali"
@@ -103,10 +103,10 @@ export function ContactSection() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white"
               >
-                <Code2 /> GitHub profile
+                <Code2 className="size-4 shrink-0" /> GitHub profile
               </a>
               <span className="flex items-center gap-3">
-                <span className="size-2 rounded-full bg-emerald-400" /> Available for new opportunities
+                <span className="size-2 shrink-0 rounded-full bg-emerald-400" /> Available for new opportunities
               </span>
             </div>
           </div>
@@ -115,7 +115,7 @@ export function ContactSection() {
         <Reveal delay={0.1}>
           <form
             onSubmit={handleSubmit}
-            className="relative grid gap-4 rounded-3xl border border-white/10 bg-card/[.06] p-5 backdrop-blur-sm sm:p-7"
+            className="relative grid gap-4 rounded-3xl border border-white/10 bg-card/[.06] p-4 backdrop-blur-sm sm:p-7"
           >
             {/* Animated Loader while API is pending */}
             <AnimatePresence>
@@ -224,7 +224,7 @@ export function ContactSection() {
                   disabled={loading}
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-[#171717] shadow-sm transition hover:scale-[1.01] hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:pointer-events-none disabled:opacity-60"
                 >
-                  Let&apos;s build something great <ArrowUpRight />
+                  Let&apos;s build something great <ArrowUpRight className="size-4 shrink-0" />
                 </button>
               </>
             )}

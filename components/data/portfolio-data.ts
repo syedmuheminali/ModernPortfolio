@@ -29,50 +29,59 @@ export interface ProjectItem {
 export const navItems = ['About', 'Skills', 'Projects', 'Experience', 'Services', 'Contact']
 
 export const stack = [
-  'React Native',
+  'MongoDB',
+  'Express.js',
   'React.js',
+  'Node.js',
+  'React Native',
   'Next.js',
   'JavaScript',
   'TypeScript',
-  'Node.js',
-  'MongoDB',
   'Tailwind CSS',
-  'Git',
   'REST APIs',
+  'Git',
 ]
 
 export const skills = {
-  Frontend: [
+  'MERN Stack & Frontend': [
     'React.js',
     'Next.js',
-    'React Native',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
     'JavaScript',
     'TypeScript',
     'HTML5',
     'CSS3',
     'Tailwind CSS',
-    'Material UI',
-    'SASS',
     'NativeWind',
   ],
-  Backend: ['Node.js', 'Express.js', 'REST APIs', 'MongoDB', 'Firebase'],
-  'Tools & Technologies': [
+  'Mobile & Backend APIs': [
+    'React Native',
+    'Expo',
+    'REST APIs',
+    'JWT Authentication',
+    'Mongoose',
+    'Firebase',
+    'State Management',
+    'API Architecture',
+  ],
+  'Tools & Ecosystem': [
     'Git',
     'GitHub',
     'Redux Toolkit',
-    'Context Api',
+    'Context API',
+    'RTK Query',
     'Axios',
-    'Cloudinary',
     'Stripe',
-    'Docker',
-    'Api Integration',
-    'AsyncStorage',
-    'Location / Maps',
+    'Cloudinary',
+    'TanStack Table',
+    'WebSockets / Socket.IO',
     'Push Notifications',
-    'Camera',
-    'WebSocket / Socket.IO',
+    'Maps & Location',
   ],
 }
+
 
 export const genAiImages = [
   genAiImage1,
@@ -149,10 +158,10 @@ export const projects: ProjectItem[] = [
 ]
 
 export const services = [
-  ['Web Development', 'Modern, responsive and high-performance websites.', Globe2],
-  ['Mobile & Web Applications', 'Modern React Native and frontend applications built for scale.', Layers3],
-  ['SaaS Products', 'Authentication, dashboards, APIs and resilient architecture.', Sparkles],
-  ['API & Backend Development', 'Secure REST APIs and backend systems that stay dependable.', Server],
+  ['MERN Full-Stack Development', 'Scalable full-stack web applications with React, Node.js, Express, and MongoDB.', Globe2],
+  ['React Native Mobile Apps', 'Modern cross-platform iOS and Android apps built with React Native and Expo.', Layers3],
+  ['SaaS & Web Platforms', 'Full-stack SaaS solutions with secure authentication, dashboards, and scalable database schemas.', Sparkles],
+  ['REST APIs & Backend Engineering', 'Robust backend services, MongoDB schemas, JWT authentication, and dependable RESTful APIs.', Server],
 ] as const
 
 export const reasons = [
