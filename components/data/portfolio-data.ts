@@ -195,6 +195,21 @@ export const experience = [
     ],
   },
   {
+    company: 'Independent Full Stack / MERN Developer',
+    location: 'Remote',
+    role: 'Freelance Software Engineer (Local & International Clients)',
+    dates: 'February 2023 — February 2024 (1 Year)',
+    description:
+      'Delivered custom, end-to-end full-stack web and mobile applications for diverse startups and independent businesses across US, UK, and domestic clients.',
+    highlights: [
+      'Full-Stack Product Delivery: Developed and shipped 6+ tailored client applications from scratch using React.js, Node.js, Express, MongoDB, and React Native, maintaining 100% on-time delivery.',
+      'Payment & Cloud Storage Integration: Integrated secure billing pipelines using Stripe (one-time payments & subscriptions) and configured automated media asset pipelines with Cloudinary for fast CDN delivery.',
+      'Modern Auth & Form Architecture: Implemented secure multi-provider auth using Clerk, Better Auth, and JWT, alongside robust client validation with Formik & Yup.',
+      'Cross-Platform Mobile UI: Crafted sleek Android & iOS interfaces in React Native with NativeWind (Tailwind CSS) for unified style consistency between mobile and web platforms.',
+      'Client Collaboration: Managed direct stakeholder communications, requirements gathering, sprint demos, and post-launch maintenance.',
+    ],
+  },
+  {
     company: 'TecStik',
     location: 'Karachi, Pakistan',
     role: 'Associate Software Engineer',

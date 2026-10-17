@@ -87,7 +87,18 @@ export function ExperienceSection() {
                   {job.highlights.map(highlight => (
                     <li key={highlight} className="flex gap-3">
                       <span className="mt-2 size-1.5 shrink-0 rounded-full bg-foreground/50" />
-                      <span>{highlight}</span>
+                      <span>
+                        {highlight.includes(': ') ? (
+                          <>
+                            <strong className="font-semibold text-foreground">
+                              {highlight.slice(0, highlight.indexOf(':') + 1)}
+                            </strong>{' '}
+                            {highlight.slice(highlight.indexOf(':') + 2)}
+                          </>
+                        ) : (
+                          highlight
+                        )}
+                      </span>
                     </li>
                   ))}
                 </ul>
