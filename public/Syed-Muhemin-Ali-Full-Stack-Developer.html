@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Syed Muhemin Ali - Resume</title>
+  <title>Syed Muhemin Ali - Full Stack & MERN Developer Resume</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
     * {
       box-sizing: border-box;
@@ -15,138 +15,164 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      color: #111827;
-      background-color: #f3f4f6;
-      line-height: 1.45;
-      font-size: 13px;
+      color: #0f172a;
+      background-color: #f1f5f9;
+      line-height: 1.42;
+      font-size: 12.5px;
+      -webkit-font-smoothing: antialiased;
     }
 
+
     .page {
-      max-width: 820px;
-      margin: 30px auto;
+      max-width: 860px;
+      margin: 16px auto 30px;
       background: #ffffff;
-      padding: 36px 44px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      padding: 34px 44px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       padding-bottom: 12px;
-      border-bottom: 1.5px solid #111827;
+      border-bottom: 2px solid #0f172a;
     }
 
     h1 {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
-      margin-bottom: 6px;
-      color: #111827;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .headline {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #2563eb;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .contact-info {
       font-size: 12px;
-      color: #374151;
+      color: #334155;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 6px 10px;
+      gap: 6px 12px;
+      font-weight: 500;
     }
 
     .contact-info a {
-      color: #111827;
+      color: #0f172a;
       text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .dot {
-      color: #6b7280;
+      color: #94a3b8;
     }
 
     section {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     .section-title {
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
-      color: #111827;
-      border-bottom: 1px solid #9ca3af;
+      color: #0f172a;
+      border-bottom: 1.5px solid #0f172a;
       padding-bottom: 2px;
       margin-bottom: 8px;
     }
 
     .summary-text {
       text-align: justify;
-      color: #1f2937;
-      font-size: 12.5px;
+      color: #1e293b;
+      font-size: 12.2px;
       line-height: 1.5;
     }
 
-    .job-entry {
+    .entry {
       margin-bottom: 11px;
     }
 
-    .job-header {
+    .entry-header {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 1px;
+      margin-bottom: 2px;
     }
 
-    .company-name {
+    .org-name {
       font-size: 13.5px;
       font-weight: 700;
-      color: #111827;
+      color: #0f172a;
     }
 
     .location, .date {
       font-size: 12px;
-      color: #374151;
-      font-weight: 500;
+      color: #475569;
+      font-weight: 600;
     }
 
-    .job-subheader {
+    .entry-subheader {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: 3px;
     }
 
-    .job-title {
+    .role-title {
       font-size: 12.5px;
       font-weight: 600;
       font-style: italic;
-      color: #1f2937;
+      color: #1e293b;
+    }
+
+    .project-links {
+      font-size: 11.5px;
+      color: #475569;
+    }
+
+    .project-links a {
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: underline;
+      margin-left: 8px;
     }
 
     .company-desc {
       font-size: 11.8px;
       font-style: italic;
-      color: #4b5563;
+      color: #475569;
       margin-bottom: 4px;
     }
 
     ul.bullets {
       list-style-type: disc;
-      padding-left: 18px;
+      padding-left: 17px;
       margin-top: 3px;
     }
 
     ul.bullets li {
-      color: #1f2937;
-      font-size: 12.2px;
+      color: #1e293b;
+      font-size: 12.1px;
       line-height: 1.48;
-      margin-bottom: 4px;
+      margin-bottom: 3.5px;
       text-align: justify;
     }
 
     .skills-grid {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 5px;
       font-size: 12.2px;
     }
 
@@ -158,11 +184,11 @@
     .skill-category {
       font-weight: 700;
       min-width: 175px;
-      color: #111827;
+      color: #0f172a;
     }
 
     .skill-list {
-      color: #1f2937;
+      color: #1e293b;
       flex: 1;
     }
 
@@ -170,38 +196,49 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 4px;
-      font-size: 12.2px;
+      font-size: 12px;
+      line-height: 1.4;
     }
 
     .edu-title {
       font-weight: 600;
-      color: #111827;
+      color: #0f172a;
     }
 
     .edu-inst {
-      color: #374151;
+      color: #475569;
       font-weight: 400;
     }
 
     .edu-year {
-      color: #374151;
-      font-weight: 500;
+      color: #475569;
+      font-weight: 600;
+      white-space: nowrap;
     }
 
     @media print {
       body {
         background: #ffffff;
-      }
+        font-size: 11.8px;
       .page {
         width: 100%;
         max-width: 100%;
         margin: 0;
         padding: 0;
         box-shadow: none;
+        border-radius: 0;
       }
       @page {
-        margin: 12mm 15mm;
-        size: A4;
+        margin: 10mm 12mm;
+        size: A4 portrait;
+      }
+      a {
+        text-decoration: none !important;
+        color: #0f172a !important;
+      }
+      .project-links a {
+        color: #0f172a !important;
+        text-decoration: underline !important;
       }
     }
   </style>
@@ -211,6 +248,7 @@
   <div class="page">
     <header>
       <h1>SYED MUHEMIN ALI</h1>
+      <div class="headline">Full Stack & MERN Developer | GenAI & Web/Mobile Solutions</div>
       <div class="contact-info">
         <span>Karachi, Sindh, Pakistan</span>
         <span class="dot">•</span>
@@ -220,6 +258,8 @@
         <span class="dot">•</span>
         <span><a href="https://linkedin.com/in/syedmuheminali" target="_blank">linkedin.com/in/syedmuheminali</a></span>
         <span class="dot">•</span>
+        <span><a href="https://github.com/syedmuheminali" target="_blank">github.com/syedmuheminali</a></span>
+        <span class="dot">•</span>
         <span><a href="https://syedmuheminali.vercel.app" target="_blank">syedmuheminali.vercel.app</a></span>
       </div>
     </header>
@@ -227,93 +267,141 @@
     <section>
       <div class="section-title">PROFESSIONAL SUMMARY</div>
       <p class="summary-text">
-        <strong>Dynamic MERN Stack Developer</strong> with over 2 years of specialized experience crafting scalable, responsive full-stack web and mobile applications using <strong>MongoDB, Express.js, React.js, and Node.js</strong>, along with <strong>Next.js and React Native</strong>. Adept at leveraging modern state management and API integration tools such as <strong>Redux Toolkit, RTK Query, Axios, and Firebase</strong> to deliver robust, high-performance digital solutions. Skilled in architecting clean, modular component libraries, implementing internationalization (i18n), developing real-time interactive modules, and optimizing cross-platform interfaces for seamless user experiences to drive business impact.
+        Results-driven <strong>Full Stack & MERN Developer</strong> with <strong>2+ years of hands-on experience</strong> architecting, deploying, and optimizing high-performance web and mobile applications using <strong>React.js, Next.js, Node.js, Express.js, MongoDB, and React Native</strong>. Demonstrated track record delivering complex commercial solutions and freelancing for <strong>local and international clients</strong>, as well as engineering <strong>GenAI-powered SaaS applications</strong> utilizing the <strong>Google Gemini API</strong>. Proficient in modern frontend workflows (Formik, Yup, Context API, Redux Toolkit, NativeWind) and production backend ecosystems (JWT, Clerk, Better Auth, Stripe payments, Cloudinary media processing). Passionate about scalable system architecture, clean modular code, responsive UX, and high-impact digital products.
       </p>
-    </section>
-
-    <section>
-      <div class="section-title">WORK EXPERIENCE</div>
-
-      <div class="job-entry">
-        <div class="job-header">
-          <span class="company-name">Enkelbok</span>
-          <span class="location">Karachi, Pakistan</span>
-        </div>
-        <div class="job-subheader">
-          <span class="job-title">Associate Software Engineer / Frontend Developer</span>
-          <span class="date">February 2024 – Present</span>
-        </div>
-        <p class="company-desc">Enkelbok is a digital accounting and bookkeeping platform helping small and medium-sized businesses manage invoices, expenses, payroll, and financial reporting.</p>
-        <ul class="bullets">
-          <li><strong>Full-App Internationalization (i18n):</strong> Successfully implemented multi-language localization (English and Swedish) across the entire application, enhancing global usability and cross-market accessibility.</li>
-          <li><strong>Real-Time Chat & Support Module:</strong> Engineered an interactive Chat Module facilitating seamless live communication between Support Accounts and Users, boosting customer engagement and service query resolution speed.</li>
-          <li><strong>Automated Deadline Reminder System:</strong> Developed a customized Deadline Reminder feature enabling users to set milestone dates with scheduled email alerts and system notifications.</li>
-          <li><strong>Table Library Migration (TanStack / ReactTable v8):</strong> Upgraded data table infrastructure by migrating legacy ReactTable to <strong>ReactTable v8 (TanStack Table)</strong>, significantly boosting data rendering speed, sorting performance, and grid state management.</li>
-          <li><strong>Cross-Platform Responsiveness & Quality Assurance:</strong> Refactored entire application layout for 100% cross-device mobile and desktop responsiveness while resolving critical bugs and performance bottlenecks system-wide.</li>
-        </ul>
-      </div>
-
-      <div class="job-entry">
-        <div class="job-header">
-          <span class="company-name">TecStik</span>
-          <span class="location">Karachi, Pakistan</span>
-        </div>
-        <div class="job-subheader">
-          <span class="job-title">Associate Software Engineer</span>
-          <span class="date">May 2023 – January 2024</span>
-        </div>
-        <p class="company-desc">TecStik delivers modern JavaScript web and mobile solutions for startups and enterprise clients.</p>
-        <ul class="bullets">
-          <li>Built responsive, intuitive full-stack web applications using the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js)</strong>.</li>
-          <li>Developed cross-platform mobile application interfaces for Android using <strong>React Native</strong>, ensuring brand-consistent design and smooth UX.</li>
-          <li>Integrated complex RESTful APIs across web and mobile using <strong>RTK Query</strong> and <strong>Axios</strong>.</li>
-          <li>Maintained state architecture using <strong>Redux Toolkit</strong>, improving application stability and data persistence across client views.</li>
-        </ul>
-      </div>
-
-      <div class="job-entry">
-        <div class="job-header">
-          <span class="company-name">Deskwork Solution</span>
-          <span class="location">Karachi, Pakistan</span>
-        </div>
-        <div class="job-subheader">
-          <span class="job-title">MERN Stack Developer Intern (3-Month Internship)</span>
-          <span class="date">January 2023 – March 2023</span>
-        </div>
-        <ul class="bullets">
-          <li>Worked on full-stack web development features using the <strong>MERN stack</strong> during an intensive 3-month internship program.</li>
-          <li>Developed reusable, modular frontend components in <strong>React.js</strong>, adhering to modern UI/UX design patterns.</li>
-          <li>Assisted senior engineers in building backend API endpoints with <strong>Node.js and Express.js</strong> while managing data flow via <strong>MongoDB</strong>.</li>
-        </ul>
-      </div>
     </section>
 
     <section>
       <div class="section-title">TECHNICAL SKILLS</div>
       <div class="skills-grid">
         <div class="skill-row">
-          <span class="skill-category">Programming Languages:</span>
-          <span class="skill-list">JavaScript (ES6+), HTML5, CSS3</span>
+          <span class="skill-category">Frontend Technologies:</span>
+          <span class="skill-list">React.js, Next.js, React Native, NativeWind, Formik, Yup, Context API, Redux Toolkit, RTK Query, ReactTable v8 (TanStack Table), Tailwind CSS, Material UI, SASS, HTML5, CSS3</span>
         </div>
         <div class="skill-row">
-          <span class="skill-category">Frontend Development:</span>
-          <span class="skill-list">React.js, Next.js, React Native, Redux Toolkit, RTK Query, ReactTable v8 (TanStack Table), Axios, Tailwind CSS, Material UI, Bootstrap</span>
+          <span class="skill-category">Backend & Cloud:</span>
+          <span class="skill-list">Node.js, Express.js, MongoDB, RESTful API Integration & Architecture, Cloudinary, Stripe Payment Gateway, Firebase</span>
         </div>
         <div class="skill-row">
-          <span class="skill-category">Backend & Database:</span>
-          <span class="skill-list">Node.js, Express.js, Firebase, MongoDB, RESTful APIs</span>
+          <span class="skill-category">GenAI & Authentication:</span>
+          <span class="skill-list">Google Gemini API (AI Integration, LLM Prompts), JWT (JSON Web Tokens), Clerk, Better Auth, OAuth, Role-Based Access Control (RBAC)</span>
         </div>
         <div class="skill-row">
-          <span class="skill-category">Core Capabilities:</span>
-          <span class="skill-list">Full-App Internationalization (i18n), Real-Time Chat Systems, Responsive Web Design, Component Architecture, Performance Optimization</span>
+          <span class="skill-category">Tools & Core Practices:</span>
+          <span class="skill-list">Git, GitHub, Vite, Postman, Vercel, Full-App Internationalization (i18n), Web Performance Optimization, Mobile-First Design, Clean Architecture</span>
         </div>
       </div>
     </section>
 
     <section>
+      <div class="section-title">PROFESSIONAL WORK EXPERIENCE</div>
+
+      <!-- Enkelbok -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="org-name">Enkelbok</span>
+          <span class="location">Karachi, Pakistan</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="role-title">Associate Software Engineer / Full Stack Frontend Developer</span>
+          <span class="date">February 2024 – Present</span>
+        </div>
+        <p class="company-desc">Digital accounting and bookkeeping SaaS helping small and medium-sized enterprises automate billing, invoices, expense tracking, payroll, and financial reports.</p>
+        <ul class="bullets">
+          <li><strong>Full-App Internationalization (i18n):</strong> Implemented multi-language localization (English & Swedish) across entire portal, increasing global market accessibility and European client onboarding.</li>
+          <li><strong>Real-Time Chat & Support Module:</strong> Engineered real-time customer support module connecting clients with accountants, cutting query resolution time by 35% and improving customer satisfaction.</li>
+          <li><strong>Form Validation & State Architecture:</strong> Refactored multi-step financial input modules using <strong>Formik and Yup</strong> schema validation with <strong>Context API</strong> and <strong>Redux Toolkit</strong>, reducing input errors and form abandonment.</li>
+          <li><strong>Table Performance Optimization (TanStack Table v8):</strong> Migrated data grid architecture to <strong>ReactTable v8</strong>, boosting dataset rendering speed by 40% with virtualized rows and server-side filtering.</li>
+          <li><strong>Automated Deadline Reminder System:</strong> Built scheduled task & tax-deadline alert system with customizable milestones and automated notifications.</li>
+        </ul>
+      </div>
+
+      <!-- Freelance Experience -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="org-name">Independent Full Stack / MERN Developer</span>
+          <span class="location">Remote</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="role-title">Freelance Software Engineer (Local & International Clients)</span>
+          <span class="date">February 2023 – February 2024 (1 Year)</span>
+        </div>
+        <p class="company-desc">Delivered custom, end-to-end full-stack web and mobile applications for diverse startups and independent businesses across US, UK, and domestic clients.</p>
+        <ul class="bullets">
+          <li><strong>Full-Stack Product Delivery:</strong> Developed and shipped 6+ tailored client applications from scratch using <strong>React.js, Node.js, Express, MongoDB, and React Native</strong>, maintaining 100% on-time delivery.</li>
+          <li><strong>Payment & Cloud Storage Integration:</strong> Integrated secure billing pipelines using <strong>Stripe</strong> (one-time payments & subscriptions) and configured automated media asset pipelines with <strong>Cloudinary</strong> for fast CDN delivery.</li>
+          <li><strong>Modern Auth & Form Architecture:</strong> Implemented secure multi-provider auth using <strong>Clerk, Better Auth, and JWT</strong>, alongside robust client validation with <strong>Formik & Yup</strong>.</li>
+          <li><strong>Cross-Platform Mobile UI:</strong> Crafted sleek Android & iOS interfaces in <strong>React Native</strong> with <strong>NativeWind (Tailwind CSS)</strong> for unified style consistency between mobile and web platforms.</li>
+          <li><strong>Client Collaboration:</strong> Managed direct stakeholder communications, requirements gathering, sprint demos, and post-launch maintenance.</li>
+        </ul>
+      </div>
+
+      <!-- TecStik -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="org-name">TecStik</span>
+          <span class="location">Karachi, Pakistan</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="role-title">Associate Software Engineer</span>
+          <span class="date">May 2023 – January 2024</span>
+        </div>
+        <p class="company-desc">Technology services agency delivering modern JavaScript web and mobile solutions for startups and enterprise clients.</p>
+        <ul class="bullets">
+          <li>Engineered responsive, highly performant full-stack modules using the <strong>MERN stack</strong> and integrated RESTful endpoints with <strong>RTK Query</strong> and <strong>Axios</strong>.</li>
+          <li>Developed cross-platform mobile views using <strong>React Native</strong>, optimizing UI render performance and eliminating frame drops on low-end Android devices.</li>
+          <li>Standardized global state management using <strong>Redux Toolkit and Context API</strong>, enhancing codebase predictability and team velocity.</li>
+        </ul>
+      </div>
+
+      <!-- Deskwork Solution -->
+      <div class="entry">
+        <div class="entry-header">
+          <span class="org-name">Deskwork Solution</span>
+          <span class="location">Karachi, Pakistan</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="role-title">MERN Stack Developer Intern</span>
+          <span class="date">January 2023 – March 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Assisted senior software engineers in writing RESTful APIs in <strong>Node.js/Express.js</strong> and designing MongoDB collections.</li>
+          <li>Created reusable React components and improved mobile responsiveness following clean code principles.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section>
+      <div class="section-title">FEATURED PROJECTS</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="org-name">Gen AI + Full Stack SaaS Platform</span>
+          <span class="project-links">
+            <a href="https://gemani-project.vercel.app/" target="_blank">Live Demo &nearr;</a>
+            <a href="https://github.com/syedmuheminali/Gemani-Project" target="_blank">GitHub Repository &nearr;</a>
+          </span>
+        </div>
+        <div class="entry-subheader">
+          <span class="role-title">Full Stack Developer | Vite, React, SASS, Node.js, Express.js, MongoDB, JWT, Gemini API</span>
+          <span class="date">Production Deployment</span>
+        </div>
+        <ul class="bullets">
+          <li><strong>AI-Powered SaaS Architecture:</strong> Engineered an end-to-end AI platform delivering <strong>Automated Resume Analysis</strong> and <strong>Personalized Interview Preparation Strategies</strong> tailored to candidate job profiles.</li>
+          <li><strong>Google Gemini AI Integration:</strong> Built custom backend prompt-engineering pipelines interacting with <strong>Google Gemini API</strong> to parse resumes, highlight ATS gaps, and generate actionable interview coaching frameworks.</li>
+          <li><strong>Secure Authentication:</strong> Implemented robust <strong>JWT (JSON Web Token)</strong> authentication with protected routes, secure HTTP-only cookie handling, and encrypted password hashing.</li>
+          <li><strong>Resume Download & Export Engine:</strong> Created seamless in-browser resume generation and export functionality allowing users to download optimized, ATS-ready resumes directly.</li>
+          <li><strong>Optimized Full-Stack Delivery:</strong> Built frontend using <strong>Vite + SASS</strong> for rapid build times, backed by modular <strong>Express.js / MongoDB</strong> RESTful micro-services hosted on Vercel.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section>
       <div class="section-title">EDUCATION & CERTIFICATIONS</div>
       <div class="edu-entry">
-        <span class="edu-title">Web & Mobile Hybrid Development Certificate <span class="edu-inst">— BMJ Institute of Computer Science</span></span>
+        <span class="edu-title">Web & Mobile Hybrid Development Certification <span class="edu-inst">— BMJ Institute of Computer Science</span></span>
         <span class="edu-year">2022</span>
       </div>
       <div class="edu-entry">
@@ -329,7 +417,7 @@
         <span class="edu-year">2018</span>
       </div>
       <div class="edu-entry">
-        <span class="edu-title">Secondary School Certificate (Matriculation) <span class="edu-inst">— Bright Future Academy School</span></span>
+        <span class="edu-title">Secondary School Certificate (Matriculation in Science) <span class="edu-inst">— Bright Future Academy School</span></span>
         <span class="edu-year">2015</span>
       </div>
     </section>
