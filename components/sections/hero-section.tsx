@@ -64,8 +64,10 @@ export function HeroSection() {
               <ArrowUpRight className="size-4 transition group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
             <a
-              href="/Syed-Muhemin-Ali-Full-Stack-Developer.html"
-              download="Syed-Muhemin-Ali-Full-Stack-Developer.html"
+              href="/Syed-Muhemin-Ali-Resume.pdf"
+              download="Syed-Muhemin-Ali-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-card px-5 py-3 text-sm font-medium transition hover:bg-muted"
             >
               Download CV
