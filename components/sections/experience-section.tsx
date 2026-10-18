@@ -26,7 +26,7 @@ export function ExperienceSection() {
                   MERN Stack &amp; Mobile Engineer
                 </p>
                 <p className="relative mt-2 text-xs text-white/55 sm:text-sm">
-                  2+ years building web and mobile products
+                  3 years building web and mobile products
                 </p>
               </div>
 

@@ -93,7 +93,7 @@ export function AboutSection() {
 
           <div className="mt-10 grid grid-cols-3 gap-2.5 sm:mt-12 sm:gap-4">
             {[
-              ['2+', 'Years experience'],
+              ['3', 'Years experience'],
               ['10+', 'Projects shipped'],
               ['∞', 'Curiosity'],
             ].map(([value, label], i) => (
