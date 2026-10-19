@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Syed Muhemin Ali | React Native & Frontend Developer Pakistan'
+export const alt = 'Syed Muhemin Ali | Full Stack & MERN Stack Developer | Karachi, Pakistan'
 export const size = {
   width: 1200,
   height: 630,
@@ -37,7 +37,7 @@ export default async function Image() {
               color: '#34d399',
             }}
           >
-            ● Available for Opportunities • Pakistan &amp; Worldwide Remote
+            ● Available for Hire • Karachi, Pakistan &amp; Remote Worldwide
           </div>
         </div>
 
@@ -62,12 +62,12 @@ export default async function Image() {
               margin: 0,
             }}
           >
-            React Native &amp; React.js Developer
+            Full Stack, MERN Stack &amp; React Native Developer
           </div>
         </div>
 
         <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          {['React Native', 'React.js', 'Next.js', 'TypeScript', 'Node.js', 'Karachi, Pakistan'].map((tech) => (
+          {['Full Stack', 'MERN Stack', 'React.js', 'Next.js', 'React Native', 'Node.js', 'TypeScript', 'Karachi, Pakistan'].map((tech) => (
             <div
               key={tech}
               style={{

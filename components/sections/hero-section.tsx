@@ -42,8 +42,13 @@ export function HeroSection() {
             transition={{ delay: 0.1 }}
             className="text-[1.75rem] font-semibold leading-[1.12] tracking-[-.02em] sm:text-5xl sm:leading-[1.06] sm:tracking-[-.04em] md:text-6xl md:leading-[1.02] md:tracking-[-.06em] lg:text-7xl"
           >
-            <span className="block">MERN Stack Developer</span>
-            <span className="mt-1.5 block text-muted-foreground sm:mt-2">Building Scalable Web &amp; Mobile Applications</span>
+            <span className="block text-foreground">Syed Muhemin Ali</span>
+            <span className="mt-2 block text-2xl font-medium tracking-tight text-foreground/90 sm:text-4xl md:text-5xl lg:text-6xl">
+              Full Stack &amp; MERN Stack Developer
+            </span>
+            <span className="mt-2 block text-base font-normal text-muted-foreground sm:text-xl md:text-2xl">
+              Building Scalable Web &amp; Mobile Applications in Karachi, Pakistan
+            </span>
           </motion.h1>
 
           <motion.p
@@ -52,7 +57,7 @@ export function HeroSection() {
             transition={{ delay: 0.2 }}
             className="mt-5 max-w-lg text-sm leading-6 text-muted-foreground sm:mt-7 sm:text-base sm:leading-7 md:text-lg"
           >
-            I build modern, scalable, and high-performance full-stack web and mobile applications using MongoDB, Express.js, React.js, Node.js (MERN), Next.js, and React Native.
+            I&apos;m a Full Stack Developer specializing in MERN Stack (MongoDB, Express.js, React.js, Node.js), Next.js, and React Native. I build modern, scalable, and high-performance web applications and mobile apps for companies and clients worldwide.
           </motion.p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-9">

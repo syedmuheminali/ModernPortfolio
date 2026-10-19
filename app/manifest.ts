@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Syed Muhemin Ali | MERN Stack & React Native Developer',
+    name: 'Syed Muhemin Ali | Full Stack Developer',
     short_name: 'Syed Muhemin',
     description:
-      'Professional MERN Stack & React Native Developer based in Karachi, Pakistan. Building scalable full-stack web and mobile applications.',
+      'Professional Full Stack, MERN Stack & React Native Developer based in Karachi, Pakistan. Building scalable full-stack web and mobile applications.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',

@@ -12,11 +12,11 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 sm:px-6 lg:px-8">
       <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-border bg-card/80 px-4 py-3 shadow-[0_8px_30px_rgb(0,0,0,.04)] backdrop-blur-xl sm:px-5">
-        <a href="#home" className="flex items-center gap-2 font-semibold tracking-tight">
+        <a href="#home" aria-label="Syed Muhemin Ali - Home" className="flex items-center gap-2 font-semibold tracking-tight">
           <span className="grid size-8 place-items-center rounded-full bg-foreground text-sm text-background">
             M.
           </span>
-          <span className="hidden sm:block">Syed Muhemin Ali</span>
+          <span className="text-sm font-semibold sm:text-base">Syed Muhemin Ali</span>
         </a>
 
         <div className="hidden items-center gap-5 text-sm text-muted-foreground md:flex">
