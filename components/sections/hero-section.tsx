@@ -46,7 +46,7 @@ export function HeroSection() {
             <span className="mt-2 block text-2xl font-medium tracking-tight text-foreground/90 sm:text-4xl md:text-5xl lg:text-6xl">
               Full Stack &amp; MERN Stack Developer
             </span>
-            <span className="mt-2 block text-base font-normal text-muted-foreground sm:text-xl md:text-2xl">
+            <span className="mt-2 block text-base font-normal tracking-normal leading-normal text-muted-foreground sm:text-xl sm:leading-relaxed md:text-2xl">
               Building Scalable Web &amp; Mobile Applications in Karachi, Pakistan
             </span>
           </motion.h1>
