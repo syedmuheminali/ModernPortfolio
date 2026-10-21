@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Code2, ExternalLink, Mail } from 'lucide-react'
 
 export function Footer() {
@@ -5,9 +6,18 @@ export function Footer() {
     <footer className="mx-auto max-w-6xl px-4 pb-10 pt-4 sm:px-6 lg:px-8">
       <div className="flex flex-col items-center gap-4 text-center text-sm text-muted-foreground sm:flex-row sm:justify-between sm:text-left">
         <div className="flex flex-col items-center gap-1 sm:flex-row sm:gap-0">
-          <span className="font-semibold text-foreground">Syed Muhemin Ali</span>
+          <Link href="/" className="font-semibold text-foreground transition hover:opacity-80">
+            Syed Muhemin Ali
+          </Link>
           <span className="mx-2 hidden sm:inline">·</span>
           <span className="text-xs sm:text-sm">MERN Stack &amp; Mobile App Developer</span>
+          <span className="mx-2 hidden sm:inline">·</span>
+          <Link
+            href="/blog"
+            className="text-xs sm:text-sm font-medium text-foreground/80 hover:text-foreground transition underline underline-offset-4"
+          >
+            Engineering Blog
+          </Link>
         </div>
         <div className="flex items-center gap-4">
           <a

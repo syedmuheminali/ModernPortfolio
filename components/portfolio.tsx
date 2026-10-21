@@ -12,6 +12,7 @@ import { ProjectsSection } from '@/components/sections/projects-section'
 import { WhyHireMeSection } from '@/components/sections/why-hire-me-section'
 import { ExperienceSection } from '@/components/sections/experience-section'
 import { ServicesSection } from '@/components/sections/services-section'
+import { BlogSection } from '@/components/sections/blog-section'
 import { ContactSection } from '@/components/sections/contact-section'
 import { ProjectModal } from '@/components/project-modal'
 import { Footer } from '@/components/footer'
@@ -45,6 +46,7 @@ export function Portfolio() {
         <WhyHireMeSection />
         <ExperienceSection />
         <ServicesSection />
+        <BlogSection />
         <ContactSection />
       </main>
 

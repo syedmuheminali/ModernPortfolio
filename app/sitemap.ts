@@ -1,15 +1,22 @@
 import type { MetadataRoute } from 'next'
+import { BLOG_POSTS } from '@/components/data/blog-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://syedmuheminali.vercel.app'
   const currentDate = new Date()
 
-  return [
+  const staticEntries: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/#about`,
@@ -48,4 +55,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
   ]
+
+  const blogEntries: MetadataRoute.Sitemap = BLOG_POSTS.map(post => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.isoDate),
+    changeFrequency: 'monthly',
+    priority: 0.85,
+  }))
+
+  return [...staticEntries, ...blogEntries]
 }
